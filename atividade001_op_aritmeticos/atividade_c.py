@@ -32,7 +32,7 @@ media = soma / n
 print('-'*70)
 print('RESULTADO')
 print('-'*70)
-print(f'A média das notas informadas: \n '
+print(f'A média das notas informadas: \n'
       f'Primeira nota - {nota_1} \n'
       f'Segunda nota - {nota_2} \n'
       f'Terceira nota - {nota_3} \n'

@@ -35,6 +35,8 @@ if numero % 2 == 0:
 else:
     print(f'O número {numero} é ímpar.')
 
-print('-'*70)
-print('Fim do programa')
-print('='*70)
+
+
+
+
+

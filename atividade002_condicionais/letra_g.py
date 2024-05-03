@@ -39,30 +39,13 @@ elif lado_c < 0:
     
 # processamento de dados/ saída
 
-
-
-if(lado_b - lado_c) < lado_a and lado_a < (lado_b + lado_c):
-    print('ok')
-    print()
-    if(lado_a - lado_c) < lado_b and lado_b < (lado_a + lado_c):
-        print('ok')
-        print()
-        if(lado_a - lado_b) < lado_c and lado_c < (lado_a + lado_b):
-            print('ok')
-            print()
-        else:
-            print('Não é um triângulo:')
-            print()
-    else:
-        print('Não é um triângulo:')
-        print()
+if lado_a < lado_b + lado_c and lado_b < lado_a + lado_c and lado_c < lado_b + lado_a:
+    print('-' * 70)
+    print('É um triângulo')
 else:
-    print('Não é um triângulo:')
-    print()
-    
-    
-    #    print('É um triângulo')
-    #    print()
-    #else:
-    #    print('Não é um triângulo:')
-    #   print()
+    print('-' * 70)
+    print('Não é um triângulo')
+
+print('-'*70)
+print('Fim do programa')
+print('='*70)
