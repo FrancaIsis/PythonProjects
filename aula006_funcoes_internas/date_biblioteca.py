@@ -9,7 +9,7 @@ from datetime import date
 os.system('cls')
 
 # declarando a variavel para data
-data = datetime.now()
+data = datetime.now() # como se estivessemos tipando a variavel/ tipo criamos um objeto
 
 #declarando uma variável data formatada
 data_formatada = data.strftime('%d/%m/%Y')
