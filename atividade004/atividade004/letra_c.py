@@ -15,20 +15,17 @@ print('=' * 70)
 # entrada de dados
 
 nome = input('Digite o seu nome: ').title()
-tipo = type(nome)
-print(tipo)
 
-# validação
-
-#if tipo != str:
-
-#    print('Valor inválido - digite um TEXTO!')
-#else:
-    # verificando se a palavra Oliveira esta contida no nome
-
-print(f'Seu nome é {nome}')
-
-if 'Oliveira' in nome:
-    print(bool('Oliveira'))
+if nome.isdigit():
+    print('Digite um valor válido.')
+    
 else:
-    print(bool())
+
+    print(f'Seu nome é {nome}')
+
+    if 'Oliveira' in nome:
+        print(bool('Oliveira'))
+    else:
+        print(bool())
+    #else:
+    #    print('Digite um nome válido.')

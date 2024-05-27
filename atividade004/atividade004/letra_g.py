@@ -26,6 +26,7 @@ numero = input('Digite um número e lhe revelaremos seus segredos....: ')
 print('')
 if not numero.isdigit():
     print('Digite um número inteiro!')
+    print('')
 
 else:
     numero = int(numero)
@@ -34,29 +35,17 @@ else:
     centena = numero // 100 % 10
     milhar = numero // 1000 % 10
 
-'''# calculando a unidade
-unidade = numero % 10
 
-#calculando a dezena
-dezena = numero % 100 - unidade
-
-# calculando a centena
-centena = numero % 1000 - dezena - unidade
-
-# calculando o milhar
-milhar = numero % 10000 - dezena - centena - unidade'''
-
-print(f'O numero digitado foi: {numero}')
-
-print('-'*70)
-print(f'Unidade: {unidade}')
-print('-'*70)
-print(f'Dezena: {dezena}')
-print('-'*70)
-print(f'Centena: {centena}')
-print('-'*70)
-print(f'Milhar: {milhar}')
-print('-'*70)
+    print(f'O numero digitado foi: {numero}')
+    print('-'*70)
+    print(f'Unidade: {unidade}')
+    print('-'*70)
+    print(f'Dezena: {dezena}')
+    print('-'*70)
+    print(f'Centena: {centena}')
+    print('-'*70)
+    print(f'Milhar: {milhar}')
+    print('-'*70)
 
 
 

@@ -16,7 +16,7 @@ frase = ''
 lista = ''
 contador, contador_a, contador_e, contador_i, contador_o, contador_u = 0, 0, 0, 0, 0, 0
 
-#entrada de dados
+# entrada de dados
 
 frase = input('Digite uma frase: ').lower().strip()
 
@@ -34,6 +34,7 @@ contador_i = lista.count('i')
 contador_o = lista.count('o')
 contador_u = lista.count('u')
 contador = contador_a + contador_e + contador_i + contador_o + contador_u
+
 
 print(f'O numero de vezes em que a vogal "a" aparece é: {contador_a}')
 print('-'*70)
