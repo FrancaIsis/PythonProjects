@@ -23,7 +23,7 @@ lista = nome.split()
 
 # processamento de dados
 
-for i in lista:
-    print(i)
-
+'''for i in lista:
+    print(i)'''
+print(f'{lista}\n')
 print('-'*70)
