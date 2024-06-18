@@ -1,8 +1,7 @@
 # Isis de Oliveira Silva França
 # Turma 0152
 # Atividade 007
-# Faça um programa que preencha uma lista
-# com 50 números aleatórios. Depois fatie essa lista em 5 listas de 10 elementos.
+# Utilizando o exercício anterior, coloque todas as listas em ordem crescente de valor
 import os
 import random
 
@@ -29,4 +28,5 @@ for i in range(0, len(lista), 10):  # estou percorrendo a lista toda, com um int
     lista_fatiada = lista[i:j]
     i += 10
     j += 10
+    lista_fatiada.sort()  # ordenando a lista
     print(lista_fatiada)
