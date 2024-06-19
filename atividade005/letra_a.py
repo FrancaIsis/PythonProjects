@@ -17,5 +17,5 @@ fim = 100
 
 # processamento/ looping
 
-for i in range(inicio, fim + 1):
+for i in range(inicio, fim+1):  # o for tem intervalo fechado no começo e aberto do final
     print(i, end=' | ')

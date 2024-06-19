@@ -34,7 +34,7 @@ if numero_inicial < 2:  # nao tem numero primo menor do que 2
 
 # varrendo o intervalo e verificando se o número é divisível por outro alem dele
 for i in range(numero_inicial, numero_final):
-    for j in range(numero_inicial, i):
+    for j in range(numero_inicial, i):  # até i - 1
         if i % j == 0:
             break  # se houver uma divisao exata o loop é interrompido
     else:

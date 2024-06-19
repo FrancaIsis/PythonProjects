@@ -22,8 +22,8 @@ fim = 100
 if inicio < 2:
     inicio = 2 # nao existe numero primo menor do que 2
     
-for i in range (inicio, fim):# percorre os dados do intervalo
-    for j in range (inicio, i): # percorre da variavel inicio ate o numero atual do indice i
+for i in range (inicio, fim):# percorre os dados do intervalo, itera sobre a sequencia de elementos gerados no intervalo estabelecido
+    for j in range (inicio, i): # percorre da variavel inicio ate o numero atual do indice i - 1 | pega do inicio ate os numeros menores q ele
         if i % j == 0:
             break # se o i for divisivel por j deu ruim, não é primo, parar o loop
     
