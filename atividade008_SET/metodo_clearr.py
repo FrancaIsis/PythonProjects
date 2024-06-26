@@ -26,11 +26,16 @@ print(f'Meu SET: {meu_set}')
 print('='*70)
 
 # usando o metodo clear()
-opcao = input('Deseja excluir os dados inseridos? (s/n)').lower().strip()
+while True:
+    opcao = input('Deseja excluir os dados inseridos? (s/n)').lower().strip()
 
-if opcao == 's':
-    meu_set.clear()
+    if opcao == 's':
+        meu_set.clear()
 
-print('-'*70)
-print(f'Meu SET: {meu_set}')
-print('-'*70)
+        print('-'*70)
+        print(f'Meu SET: {meu_set}')
+        print('-'*70)
+        
+    else:
+        print('Encerrando.')
+        break
