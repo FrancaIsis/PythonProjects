@@ -14,6 +14,7 @@ if 0 <= indice < len(lista_numeros):
     # remove o elemento no índice especificado e exibe-o
     elemento_removido = lista_numeros.pop(indice)
     print(f'Elemento removido: {elemento_removido}')
+    
 else:
     print('Indice inválido!')
 
