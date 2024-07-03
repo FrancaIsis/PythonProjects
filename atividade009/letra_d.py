@@ -16,7 +16,7 @@ lista = []
 while True:
     print('-'*70)
     print('\nMenu de opções:')
-    print('1 - Adicionar cores')
+    print('1 - Adicionar 5 cores')
     print('2 - Mostrar cores inseridas')
     print('3 - Sair')
     print('-'*70)
