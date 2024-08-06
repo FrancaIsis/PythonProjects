@@ -6,6 +6,7 @@
 # os números ímpares, a quantidade de números pares e a quantidade de números ímpares.
 
 import os
+import random
 
 
 os.system('cls')
@@ -14,6 +15,7 @@ par = []
 impar = []
 lista = []
 
+
 def transformar_listas(lista):
     '''Função que recebe uma lista e calcula os numeros pares e impares'''
     for i in lista:
@@ -21,18 +23,23 @@ def transformar_listas(lista):
             par.append(i)
         else:
             impar.append(i)
-    print(f'Você informou {len(par)} números pares, os quais são: {par}')
-    print(f'Você informou {len(impar)} números ímpares, os quais são: {impar}')
+    quantidade_par = len(par)
+    quantidade_impar = len(impar)
+    return par, impar, quantidade_par, quantidade_impar  # empacotamento
 
-#inserindo os numeros na lista
-while len(lista)<10:
-    numero = int(input('Informe um número: '))
-    if numero not in lista:
-        lista.append(numero)
-        
-  
+    # print(f'Você informou {len(par)} números pares, os quais são: {par}')
+    # print(f'Você informou {len(impar)} números ímpares, os quais são: {impar}')
+
+
+# inserindo os numeros na lista com list comprehension
+lista = list(random.randint(1, 100) for i in range(10))
+
+
 # chamando a função e passando o argumento lista
-transformar_listas(lista)
+par, impar, qtde_par, qtde_impar = transformar_listas(lista)
 
-
-    
+print(f'A lista de números gerada foi {lista}\n'
+      f'Pares = {par}\n'
+      f'Impares = {impar}\n'
+      f'Quantidade de numeros pares = {qtde_par}\n'
+      f'Quantidade de numeros ímpares = {qtde_impar}\n')

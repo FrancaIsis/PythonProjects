@@ -58,7 +58,7 @@ def quiz_estados(estado, capital):
         print('Parabéns! Continue assim!\n')
     else:
         contador = 0
-        print(f'Xih ! resposta erradada, a capital correta era {capital}!\n')
+        print(f'Xih ! resposta errada, a capital correta era {capital}!\n')
     return contador
     
 while True:
