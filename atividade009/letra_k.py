@@ -17,6 +17,7 @@ print('NOMES')
 print('=' * 70)
 
 cadastro = {}
+lista = []
 
 
 while True:
@@ -26,9 +27,11 @@ while True:
     if nome not in cadastro:
         if idade != 999:
             cadastro[nome] = idade
+            lista.append(cadastro.copy())
         else:
             break
     else:
         print(f'O nome {nome} já está cadastrado.')
         
 print(cadastro)
+print(lista)
